@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="socialnetworkgui.AccountController"
+            prefHeight="400.0" prefWidth="600.0">
+    <GridPane hgap="5.0" layoutX="50.0" prefHeight="207.0" prefWidth="373.0" vgap="5.0"
+              AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="49.0"
+              AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.5" minWidth="10.0" prefWidth="120.5"/>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.5" minWidth="10.0" prefWidth="237.5"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints/>
+            <RowConstraints/>
+        </rowConstraints>
+        <children>
+            <Label prefHeight="47.0" prefWidth="187.0" text="Username" GridPane.rowIndex="0"/>
+            <TextField fx:id="textFieldUsername" prefHeight="46.0" prefWidth="186.0" GridPane.columnIndex="1"/>
+            <Button text="Add friend" onAction="#onAddFriendButtonClick" GridPane.columnIndex="0"
+                    GridPane.rowIndex="1"/>
+            <Button text="Remove friend" onAction="#onRemoveFriendButtonClick" GridPane.columnIndex="1"
+                    GridPane.rowIndex="1"/>
+            <Button text="Show all friends" onAction="#onShowFriendsButtonClick" GridPane.columnIndex="0"
+                    GridPane.rowIndex="2"/>
+            <Button text="Show friend requests" onAction="#onFriendRequestsButtonClick" GridPane.columnIndex="1"
+                    GridPane.rowIndex="2"/>
+        </children>
+    </GridPane>
+</AnchorPane>
